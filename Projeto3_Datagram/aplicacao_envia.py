@@ -32,7 +32,8 @@ def main():
       txBuffer = bytearray(baby)
 
     txLen = len(txBuffer)
-    #print(txLen) 
+
+    
 
 
     #previsão de tempo de transmissão

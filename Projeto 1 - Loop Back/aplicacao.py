@@ -47,17 +47,16 @@ def main():
     #como fazer isso
     print ("gerando dados para transmissao :")
   
-    '''   
-    teste
-    ListTxBuffer =list()
-    for x in range(0,20):
-        ListTxBuffer.append(x)
-    txBuffer = bytes(ListTxBuffer)
-    txLen    = len(txBuffer)
-    print(txLen)
-    '''
-
-    # Enviando imagem para arduino
+      
+    
+    # ListTxBuffer =list()
+    # for x in range(0,20):
+    #     ListTxBuffer.append(x)
+    # txBuffer = bytes(ListTxBuffer)
+    # txLen    = len(txBuffer)
+    # print(txLen)
+    
+    # # Enviando imagem para arduino
     with open("imagens/img.jpg", "rb") as imageFile:
       baby = imageFile.read()
       
@@ -88,7 +87,7 @@ def main():
     
     print (rxBuffer)
 
-    # Le a imagem retornada do loop
+    #Le a imagem retornada do loop
     new = open("imagens/newimg.jpg", "wb") 
     new.write(rxBuffer) 
     new.close() 
